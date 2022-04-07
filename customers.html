@@ -1,0 +1,310 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customers</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+    <div class="topline"><nav class="navbar">
+        <a href="tel:7603332410" class="fas fa-phone">760.571.9814</a>
+        <a href="mail:murdockcris@live.com" class="fas fa-envelope">murdockcris@live.com</a>
+        
+        <a href="contact.html" class="btn">get support now</a>
+    </btn>
+        
+    </nav>
+
+     
+
+    </div>
+    </nav>
+
+     
+
+    </div>
+    <div><a href="index.html"><img src="lglg.png" class="rockitlogo"></a></div>
+
+
+    
+
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="services.html">services</a>
+        <a href="customers.html">customers</a>
+        <a href="testimonials.html">testimonials</a>
+        <a href="about.html">about</a>
+        <a href="referralprogram.html">refer us</a>
+        
+        <a href="contact.html">contact</a>
+    </nav>
+
+
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <div class="newsletter">
+
+    <h1 class="heading">We have helped many businesses</h1>
+    <p>relieve their technology worries, so they can focus on their company development.</p>
+   
+
+</div>
+
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="customer-CosmicSolar.jpg" alt="">
+            
+            <a href="www.cosmicsolar.com" class="btn">www.cosmicsolar.com</a>
+        </div>
+
+        <div class="box">
+            <img src="customer-Harrahs.jpg" alt="">
+            >
+            <a href="www.caesars.com/harrahs-socal" class="btn">www.caesars.com/harrahs-socal</a>
+        </div>
+
+        <div class="box">
+            <img src="customer-VCwireless.jpg" alt="">
+            
+            <a href="www.vcweb.org" class="btn">www.vcweb.org</a>
+        </div>
+        
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- about section starts  -->
+
+
+
+<!-- about section ends -->
+
+<!-- newsletter  -->
+
+
+<!-- review section starts  -->
+
+
+
+<!-- review section ends -->
+
+<!-- pricing section starts  -->
+
+
+
+<!-- pricing section ends -->
+
+<!-- contact section starts  -->
+
+ <section class="contact" id="contact">
+    <script type="text/javascript">var submitted=false;</script>
+ <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='index.html';}"></iframe> 
+    
+    <!-- Update the Google forms URL in action-->
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScuIO-dsZUGhiSGC88OjxYOFLrTfZLrETN8n7wd4oOzjABlnQ/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+   
+  
+
+
+
+        <h1 class="heading">be our next customer</h1>
+
+        <div class="inputBox">
+            <input type="text" id="name" required name="entry.344358795">
+            <label>name</label>
+
+        </div>
+
+        <div class="inputBox">
+            <input type="email"
+            id="email" required name="entry.738395200">
+            <label>email</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="number" id="phone"required name="entry.1420029259">
+            <label>phone</label>
+        </div>
+         
+
+        <div class="inputBox">
+            <textarea required name="entry.1098097048" id="" cols="30" rows="10"></textarea>
+            <label>message</label>
+        </div>
+
+        <input type="submit" class="btn" value="send message">
+
+    </form>
+
+
+</section>
+ <script type="text/javascript">var submitted=false;</script>
+    
+<script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+            return true;
+          }
+        }
+        </script>
+
+<!-- contact section edns -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Our passion is to help owners and residential clients with a customized
+digital solution that fits their individual needs.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+        <a href="services.html">services</a>
+        <a href="customers.html">customers</a>
+        <a href="testimonials.html">testimonials</a>
+        <a href="about.html">about</a>
+        <a href="referralprogram.html">refer us</a>
+        
+        <a href="contact.html">contact</a>
+        </div>
+
+       
+
+        <div class="box">
+            <h3>contact info</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> (760) 571-9814</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p>murdockcris@live.com </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> San Diego, CA </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> &copy; GRBQ WEB DEVELOPMENT San Diego, CA © 2016-2022 All Rights Reserved. Site by grbq.us</h1>
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
